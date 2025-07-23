@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
-    <title>cadastro</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <section>
-    <header>
-        <h1>Olá, seja bem-vindo</h1>
-    </header>
-        <div>
-            <p>Email: <input type="text" id="email"></p>
-            <br>
-            <p>Senha: <input type="text" id="senha"></p>
-            <br>
-            <input type="button" value="cadastrar" onclick="cadastrar()">
+        <header>
+            <h1>Olá, seja bem-vindo</h1>
+        </header>
+        <form onsubmit="cadastrar(); return false;">
+            <p>Email:<br><input type="email" id="email" required></p>
+            <p>Senha:<br><input type="password" id="senha" required></p>
+            <input type="submit" value="Cadastrar">
             <h6>Já tem uma conta? <a href="../login/login.html">Fazer login</a></h6>
-        </div>
+        </form>
     </section>
     <script src="cadastro.js"></script>
 </body>
